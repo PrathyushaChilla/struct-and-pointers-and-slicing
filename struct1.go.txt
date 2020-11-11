@@ -1,0 +1,115 @@
+program1
+
+package main
+
+import "fmt"
+
+func main() {
+	var a [2]string
+	a[0] = "Hello"
+	a[1] = "Every one"
+	fmt.Println(a[0], a[1])
+	fmt.Println(a)
+
+	primes := [6]int{21, 32, 45, 19, 25, 30}
+	fmt.Println(primes)
+}
+output:
+Hello Every one
+[Hello Every one]
+[21 32 45 19 25 30]
+Program exited.
+
+
+
+
+program2
+
+package main
+import "fmt"
+
+func main() {
+	var a [2]string
+	a[0] = "prathyusha"
+	a[1] = "reddy"
+	fmt.Println(a[0], a[1])
+	fmt.Println(a)
+	primes := [6]int{1, 2, 4, 6, 10, 25}
+	fmt.Println(primes)
+}
+output:
+prathyusha reddy
+[prathyusha reddy]
+[1 2 4 6 10 25]
+Program exited.
+
+
+
+
+
+program3
+
+package main
+import "fmt"
+func main() {
+   var n [10]int 
+   var i,j int
+
+         
+   for i = 0; i < 10; i++ {
+      n[i] = i + 11 
+   }
+   
+   for j = 0; j < 10; j++ {
+      fmt.Printf("Element[%d] = %d\n", j, n[j] )
+   }
+}
+output:
+Element[0] = 11
+Element[1] = 12
+Element[2] = 13
+Element[3] = 14
+Element[4] = 15
+Element[5] = 16
+Element[6] = 17
+Element[7] = 18
+Element[8] = 19
+Element[9] = 20
+
+
+
+
+program4
+
+package main
+
+import (  
+    "fmt"
+)
+func main() {  
+    var a [4]int //int array with length 3
+    fmt.Println(a)
+}
+output:
+[0 0 0 0]
+
+
+
+
+
+program5
+
+package main
+
+import (  
+    "fmt"
+)
+func main() {  
+    var a [3]int //int array with length 3
+    a[0] = 29 // array index starts at 0
+    a[1] = 30
+    a[2] = 33
+    fmt.Println(a)
+}
+output:
+[29 30 33]

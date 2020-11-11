@@ -1,0 +1,175 @@
+program1
+
+package main
+import (  
+    "fmt"
+)
+type student struct {  
+    firstName string
+    lastName  string
+    age       int
+    qualification    string
+}
+func main() {  
+    var student4 student //zero valued struct
+    fmt.Println("First Name:", student4.firstName)
+    fmt.Println("Last Name:", student4.lastName)
+    fmt.Println("Age:", student4.age)
+    fmt.Println("qualification:", student4.qualification)
+}
+output:
+First Name: 
+Last Name: 
+Age: 0
+qualification: 
+
+
+
+
+program2
+
+package main
+import (  
+    "fmt"
+)
+type Employee struct {  
+    firstName string
+    lastName  string
+    age       int
+    salary    int
+}
+func main() {  
+    emp8 := &Employee{
+        firstName: "prathyusha",
+        lastName:  "chilla",
+        age:       22,
+        salary:    50000,
+    }
+    fmt.Println("First Name:", (*emp8).firstName)
+    fmt.Println("Age:", (*emp8).age)
+}
+output:
+First Name: prathyusha
+Age: 22
+Program exited.
+
+
+
+
+program3
+
+package main
+import (  
+    "fmt"
+)
+type Employee struct {  
+    firstName string
+    lastName  string
+    age       int
+    salary    int
+}
+func main() {  
+    emp8 := &Employee{
+        firstName: "damodar",
+        lastName:  "chilla",
+        age:       35,
+        salary:    100000,
+    }
+    fmt.Println("First Name:", emp8.firstName)
+    fmt.Println("Age:", emp8.age)
+	}
+	output:
+	First Name: damodar
+Age: 35
+Program exited.
+
+
+
+   
+   
+   
+program4   
+   
+package main
+import (  
+    "fmt"
+)
+type name struct {  
+    firstName string
+    lastName  string
+}
+func main() {  
+    name1 := name{
+        firstName: "sandhya",
+        lastName:  "kaali",
+    }
+    name2 := name{
+        firstName: "Sasikala",
+        lastName:  "kaali",
+    }
+    if name1 == name2 {
+        fmt.Println("name1 and name2 are equal")
+    } else {
+        fmt.Println("name1 and name2 are not equal")
+    }
+    name3 := name{
+        firstName: "akash",
+        lastName:  "kanda",
+    }
+    name4 := name{
+        firstName: "Steve",
+    }
+    if name3 == name4 {
+        fmt.Println("name3 and name4 are equal")
+    } else {
+        fmt.Println("name3 and name4 are not equal")
+    }
+}
+output:
+name1 and name2 are not equal
+name3 and name4 are not equal
+
+
+
+
+
+
+program5
+
+package main
+import (  
+    "fmt"
+)
+type Address struct {  
+    city  string
+    state string
+}
+type Person struct {  
+    name    string
+    age     int
+    address Address
+}
+func main() {  
+    p := Person{
+        name: "supraja",
+        age:  26,
+        address: Address{
+            city:  "hyderabad",
+            state: "andhrapradesh",
+        },
+    }
+    fmt.Println("Name:", p.name)
+    fmt.Println("Age:", p.age)
+    fmt.Println("City:", p.address.city)
+    fmt.Println("State:", p.address.state)
+}
+output:
+Name: supraja
+Age: 26
+City: hyderabad
+State: andhrapradesh
+Program exited.
+
+
+
+
